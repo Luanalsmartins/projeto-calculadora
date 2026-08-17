@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 50px 50px;
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+div {
+    border: 1px solid black;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.numeros {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}

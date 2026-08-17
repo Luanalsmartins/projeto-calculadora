@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(204, 221, 243);
+    display: grid;
+    grid-template-rows: 1fr 2;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    text-align: center;
+}
+
+#resultados {
+    background-color: rgba(255, 255, 255, 0.719);
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.numeros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+
+}
+
+.operadores {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.operadores button {
+    background-color: rgb(216, 216, 216);
+    
+}
+
+button {
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+

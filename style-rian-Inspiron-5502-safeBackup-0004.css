@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: 1px solid black;
+}
+
+div {
+    border: 1px solid black;
+}

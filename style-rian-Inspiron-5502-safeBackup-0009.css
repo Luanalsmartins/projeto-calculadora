@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(204, 221, 243);
+    max-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 2fr 3fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+#resultados {
+    background-color: rgba(255, 255, 255, 0.719);
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+.botoes {
+    display: grid;
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.numeros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.numeros button:nth-child(10) {
+    grid-column: 1 / span 3;
+}
+
+.operadores {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.operadores button:nth-child(6)  {
+    background-color: rgb(235, 196, 124);
+    grid-column: 2;
+    grid-row: 3 / span 2;
+}
+
+.operadores button {
+    background-color: rgb(216, 216, 216);
+    
+}
+
+button {
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    background-color: gray;
+    cursor: pointer;
+    z-index: 2;
+    transform: scale(1.1)
+}
+
