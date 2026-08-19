@@ -57,6 +57,11 @@ function calcular(expressao) {
         return partes.reduce((acc, numero) => acc * Number(numero), 1)
     } else if (expressao.includes('/')) {
         let partes = expressao.split('/')
-        return partes.reduce((acc, numero) => acc / Number(numero))
+        if (partes.some(numero => Number(numero) === 0)) {
+            alert('Divisão por zero não é permitida.')
+            return 'Erro'
+        } else {
+            return partes.reduce((acc, numero) => acc / Number(numero))
+        }
     }
 }
