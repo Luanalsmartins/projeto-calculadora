@@ -43,6 +43,7 @@ botaoIgual.addEventListener('click', function() {
         resultados.innerText = expressaoAnterior
         contaFinalizada = false
     } 
+
 }) 
 
 function calcular(expressao) {
